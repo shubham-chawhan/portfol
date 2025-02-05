@@ -1,0 +1,115 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and layout */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: #0056b3;
+    color: white;
+    padding: 30px;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Section styling */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    width: 80%;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Basic Info Section */
+.basic-info ul {
+    list-style: none;
+}
+
+.basic-info li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.basic-info a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.basic-info a:hover {
+    text-decoration: underline;
+}
+
+/* About Me Section */
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Skills Section */
+.skills ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills li {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+/* Projects Section */
+.projects .project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.projects .project {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.projects .project h3 {
+    color: #333;
+    font-size: 1.4rem;
+}
+
+.projects .project p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1rem;
+    color: #555;
+}
