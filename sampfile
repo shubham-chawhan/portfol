@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+    stages {
+        stage('clone') {
+            steps {
+                git branch: 'main', url: 'https://github.com/shubham-chawhan/portfol.git'
+            }
+        }
+        stage('build') {
+            steps {
+                sh 'echo "build successfull"'
+            }
+        }
+        stage('test') {
+            steps {
+                sh 'echo "test successfull"'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'echo "deploy successfull"'
+            }
+        }
+    }
+}
