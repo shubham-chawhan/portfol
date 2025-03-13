@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'echo "deploy successfull pcm successfully done"'
+                sh 'echo "deploy successfull pcm successfully done in vs code"'
             }
         }
     }
